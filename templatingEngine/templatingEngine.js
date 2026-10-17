@@ -7,7 +7,7 @@ export function constructPage(page, options = {}) {
     return header
         .replace('{{CSS_LINKS}}', options.cssLinks || "")
         .replace('{{JS_LINKS}}', options.jsLinks || "")
-        .replace('{{TAB_TITLE}}', options.tabTitle || "Planter")
+        .replace('{{TAB_TITLE}}', options.tabTitle || "Learning Goals")
      + page
      + footer;
 }

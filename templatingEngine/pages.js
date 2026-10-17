@@ -7,6 +7,7 @@ import { constructPage, readPage } from "./templatingEngine.js";
 const frontpage = readPage('public/pages/frontpage/frontpage.html');
 
 export const frontpagePage = constructPage(frontpage, {
+    cssLinks: `<link rel="stylesheet" href="/pages/frontpage/frontpage.css" />`,
     jsLinks: `<script src="/assets/js/escapeHTML.js" />`
 });
 
@@ -17,15 +18,18 @@ const dataTypes = readPage('public/pages/basic-javascript/data-types/data-types.
 const variables = readPage('public/pages/basic-javascript/variables/variables.html');
 
 export const basicJavaScriptPage = constructPage(basicJavaScript, {
-    jsLinks: `<script src="/assets/js/escapeHTML.js" />`
+    jsLinks: `<script src="/assets/js/escapeHTML.js" />`,
+    tabTitle: "Basic Java Script"
 });
 
 export const dataTypesPage = constructPage(dataTypes, {
-    jsLinks: `<script src="/assets/js/escapeHTML.js" />`
+    jsLinks: `<script src="/assets/js/escapeHTML.js" />`,
+    tabTitle: "Data Types"
 });
 
 export const variablesPage = constructPage(variables, {
-    jsLinks: `<script src="/assets/js/escapeHTML.js" />`
+    jsLinks: `<script src="/assets/js/escapeHTML.js" />`,
+    tabTitle: "Variables"
 });
 
 //-------------------------------------- Setup Project Pages -----------------------------------
@@ -35,13 +39,16 @@ const apiDesignTemplate = readPage('public/pages/setup-project/api-design-templa
 const templating = readPage('public/pages/setup-project/templating/templating.html');
 
 export const setupProjectPage = constructPage(setupProject, {
-    jsLinks: `<script src="/assets/js/escapeHTML.js" />`
+    jsLinks: `<script src="/assets/js/escapeHTML.js" />`,
+    tabTitle: "Setup Project"
 });
 
 export const apiDesignTemplatePage = constructPage(apiDesignTemplate, {
-    jsLinks: `<script src="/assets/js/escapeHTML.js" />`
+    jsLinks: `<script src="/assets/js/escapeHTML.js" />`,
+    tabTitle: "API Design Template"
 });
 
 export const templatingPage = constructPage(templating, {
-    jsLinks: `<script src="/assets/js/escapeHTML.js" />`
+    jsLinks: `<script src="/assets/js/escapeHTML.js" />`,
+    tabTitle: "Templating"
 });
