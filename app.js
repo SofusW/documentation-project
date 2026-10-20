@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.static('public'));
 
-import {frontpagePage, basicJavaScriptPage, dataTypesPage, variablesPage, loopsPage, timePage, setupProjectPage, esModuleVsCommonJsPage, staticFilesPage, apiDesignTemplatePage, templatingPage, nodemonPage, fetchingPage} from './templatingEngine/pages.js';
+import {frontpagePage, basicJavaScriptPage, variablesPage, dataTypesPage, loopsPage, timePage, setupProjectPage, esModuleVsCommonJsPage, staticFilesPage, apiDesignTemplatePage, templatingPage, nodemonPage, fetchingPage} from './templatingEngine/pages.js';
 import {} from './templatingEngine/pages.js';
 
 //------------------------------------ Front Page ------------------------------------------------
@@ -22,17 +22,17 @@ app.get('/basic-javascript', (req, res) => {
 
 });
 
-app.get('/data-types', (req, res) => {
-
-    res.send(dataTypesPage);
-
-});
-
 app.get('/variables', (req, res) => {
 
     res.send(variablesPage);
 
 });
+
+app.get('/data-types', (req, res) => {
+
+    res.send(dataTypesPage);
+
+})
 
 app.get('/loops', (req, res) => {
 

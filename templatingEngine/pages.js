@@ -13,25 +13,25 @@ export const frontpagePage = constructPage(frontpage, {
 //---------------------------------- Basic Java Script Pages ------------------------------------
 
 const basicJavaScript = readPage('public/pages/basic-javascript/basic-javascript.html');
-const dataTypes = readPage('public/pages/data-types/data-types.html');
 const variables = readPage('public/pages/variables/variables.html');
+const dataTypes = readPage('public/pages/data-types/data-types.html')
 const loops = readPage('public/pages/loops/loops.html');
 const time = readPage('public/pages/time/time.html');
 
-export const basicJavaScriptPage = constructPage(basicJavaScript, {
-    jsLinks: `<script src="/assets/js/escapeHTML.js" />`,
-    tabTitle: "Basic Java Script"
-});
-
 export const dataTypesPage = constructPage(dataTypes, {
     jsLinks: `<script src="/assets/js/escapeHTML.js" />`,
-    tabTitle: "Data Types"
+    tabTitle: "Basic Java Script"
 });
 
 export const variablesPage = constructPage(variables, {
     cssLinks: `<link rel="stylesheet" href="/pages/variables/variables.css" />`,
     jsLinks: `<script src="/assets/js/escapeHTML.js" />`,
     tabTitle: "Variables"
+});
+
+export const basicJavaScriptPage = constructPage(basicJavaScript, {
+    jsLinks: `<script src="/assets/js/escapeHTML.js" />`,
+    tabTitle: "Basic Java Script"
 });
 
 export const loopsPage = constructPage(loops, {

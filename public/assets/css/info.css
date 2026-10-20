@@ -12,7 +12,7 @@
 .text-box {
 
   flex: 1;  
-  padding: 20px 20px;  
+  padding: 10px 20px;  
   text-decoration: none;
   color: #343434;
   background-color: lightgreen;
@@ -29,7 +29,7 @@
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.3rem;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 
 }
 
@@ -42,6 +42,32 @@
     border: black solid;
     border-radius: 5px;
     border-width: 2px;
-    padding: 8px;
+    padding: 4px;
     
 }
+
+.data-types-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.data-types-info-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px;
+
+}
+
+.data-types-info-box img {
+    width: 100%;
+    height: auto;
+}
+
+.data-types-info-box p {
+    margin: 2px;
+}
+
